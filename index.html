@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Frame</title>
+  <style>
+    .grille {
+      display: grid;
+      grid-template-rows: 20% 80%;
+      grid-template-columns: 1fr 2fr; /* Fenêtre gauche plus petite */
+      grid-template-areas:
+        "haut haut"
+        "gauche droite";
+      height: 100vh;
+    }
+
+    .haut {
+      grid-area: haut;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .gauche {
+      grid-area: gauche;
+      background-color: #d0e0f0;
+      padding: 20px;
+    }
+
+    .droite {
+      grid-area: droite;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grille">
+    <div class="haut">
+      <a href="eneam.bj"><img src="eneam.jpg" alt="ENEAM" title="aller sur le site eneam.bj" style="float: right; width: 75px; margin-left: 10px;"></a>
+      <a href="etudiant.uac.bj"><img src="uac.jpg" alt="UAC" title="Aller sur le site etudiant.uac.bj" style="float: left; width: 75px;"></a>
+      <center><strong><h2>BIENVENUE SUR MON SITE</h2></strong></center>
+    </div>
+    <div class="gauche">
+      <h2>MENU</h2>
+      <a href="page1.html" target="affichage">page1</a></br>
+      <a href="page 2.txt.html" target="affichage">Page2</a></br>
+      <a href="page3.html" target="affichage">page3</a></br>
+      <a href="formulaire1.html" target="affichage">Formulaire 1</a></br>
+      <a href="formulaire2.html" target="affichage">Formulaire 2</a></br>
+      <a href="Tableau.html" target="affichage">Tabeau</a></br>
+      <a href="curriculum vittee .html" target="affichage">Curriculum vittee</a></br>
+    </div>
+    <div class="droite"> 
+      Je m'appelle <em>ZINSOU Jessica</em> je vous présente mon site web
+      <iframe name="affichage" width="150%" height="500px" style="border:1px solid #ccc;"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
